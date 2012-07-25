@@ -1,0 +1,30 @@
+{
+  "name": "redisProxy",
+  "version": "1.0.0",
+  "description": "Redis Master Slave switcher. If master goes down, make slave master. Use slave for reading and master for writing.",
+  "keywords": [
+    "redis",
+    "proxy",
+    "master",
+    "slave"
+  ],
+  "main": "./repController.js",
+  "author": {
+    "name":"Jerry Reptak",
+    "email":"jreptak@gmail.com>"
+  },
+  "scripts": {
+    "test": "mocha -t 5000 -R list"
+  },
+  "dependencies": {
+    "redis": "0.7.2",
+    "tracer": "0.4.2"
+  },
+  "devDependencies": {
+    "mocha": "1.0.3"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
